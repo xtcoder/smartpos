@@ -1,0 +1,144 @@
+using System;
+
+
+namespace SmartPOS.app
+{
+    /// <summary>
+    /// 
+    ///This is User class. User class holds the basic information of customers and all employees
+    /// </summary>
+    public class User
+    {
+        private int id;
+        private String firstName;
+        private String lastName;
+        private String phoneNumber;
+        private String mobileNumber;
+        private String emailAddress;
+        private Address userAddress;
+        private Date dateOfBirth;
+        private Gender userGender;
+        private String bloodGroup;
+        private String religion;
+        private String description;
+
+        public User()
+        {
+        } // end default cons
+
+        /// <summary>
+        /// Id properties will use for get the user id ans also set the id.
+        /// <return> The value of id</return>
+        /// </summary>
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    id = value;
+                }
+            }
+        }
+
+        public string FirstName 
+        {
+            get 
+            {
+                return firstName; 
+            } 
+            set
+            {
+                firstName = value; 
+            } 
+        }
+ 
+        public string LastName
+        {
+            get 
+            {
+                return lastName; 
+            }
+            set
+            {
+                lastName = value;
+            }
+        }
+
+        public string PhoneNumber
+        {
+            get 
+            {
+                return phoneNumber;
+            }
+            set
+            {
+                phoneNumber = value; 
+            }
+        }
+
+        public string MobileNumber 
+        {
+            get
+            {
+                return mobileNumber;
+            }
+            set
+            {
+                mobileNumber = value; 
+            }
+        }
+        
+        public string EmailAddress
+        {
+            get
+            {
+                return emailAddress;
+            }
+            set
+            {
+                emailAddress = value; 
+            }
+        }
+        
+        public string BloodGroup
+        {
+            get
+            {
+                return bloodGroup; 
+            }
+            set
+            {
+                bloodGroup = value;
+            }
+        }
+        
+        public string Religion
+        {
+            get
+            {
+                return religion; 
+            }
+            set
+            {
+                religion = value;
+            } 
+        }
+        
+        public string Description
+        {
+            get
+            {
+                return description; 
+            }
+            set
+            {
+                description = value; 
+            }
+        }
+    } // end User class
+}
